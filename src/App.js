@@ -1,10 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router,Route  } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
+import './css/LoginScreen.css'
+import { LoginScreen } from './screens/LoginScreen';
 
 
 function App() {
   return (
-    <div >
-      Welcome to TASVEER
-    </div>
+    <Router>
+     
+        <Container >
+        <Route path='/' component={LoginScreen} exact/>
+        </Container>
+      
+  </Router>
   );
 }
 
