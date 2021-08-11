@@ -8,18 +8,18 @@ import {
 
 
 //Screen-Imports
-import {HomeScreen} from './screens/HomeScreen';
+import { HomeScreen } from './screens/HomeScreen';
 function App() {
   return (
     <>
-    <Router>
-      
-      
-      <Route component={HomeScreen} exactpath="/" />
-       
-      
-      
-    </Router>
+      <Router>
+
+
+        <Route component={HomeScreen} exactpath="/" />
+
+
+
+      </Router>
     </>
 
   );
