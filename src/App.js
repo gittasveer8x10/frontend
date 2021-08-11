@@ -1,10 +1,15 @@
+//Complementary-Functions
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-
+//Screen-Imports
+import { HomeScreen } from "./screens/HomeScreen";
 function App() {
   return (
-    <div >
-      Welcome to TASVEER
-    </div>
+    <>
+      <Router>
+        <Route component={HomeScreen} exactpath="/" />
+      </Router>
+    </>
   );
 }
 
