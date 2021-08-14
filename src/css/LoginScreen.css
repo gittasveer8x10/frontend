@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 *:focus {
   outline: none;
 }
@@ -7,61 +7,69 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-  height:100%;
+  height: 100%;
   background: #0f0f0f;
 }
 
 #login-box {
   position: relative;
   margin: 5% auto;
-  width: 600px;
-  height: 480px;
-  background: #FFF;
+  width: 700px;
+  height: 500px;
+  background: #ededed;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.login-bottom{
-    font-size: 12px;
-    color: black;
-    font-weight: bold;
-    margin-top: 12px;
-    text-decoration: none;
-
+#login-bottom {
+  font-size: 12px;
+  color: black;
+  font-weight: 700;
+  margin-top: 4px;
+  text-decoration: none;
+  margin-left: 52px;
+}
+#login-botto {
+  margin-left: 54px;
+  margin-top: 24px;
 }
 
-.right {
+#right {
   position: absolute;
   top: 0;
   left: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
 }
 
 h1 {
-  margin: 0 0 20px 0;
+  margin: 17px 0px 26px 26px;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 input[type="text"],
 input[type="password"] {
   display: block;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding: 4px;
-  width: 220px;
+  width: 251px;
   height: 32px;
   border: none;
-  border-bottom: 1px solid #AAA;
-  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid #555555;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   transition: 0.2s ease;
+  margin-left: 17px;
+  border-radius: 0px;
+  margin-top: 32px;
+  background-color: #ededed;
 }
 
 input[type="text"]:focus,
@@ -71,133 +79,79 @@ input[type="password"]:focus {
   transition: 0.2s ease;
 }
 
-input[type="submit"] {
-  margin-top: 0px;
-  margin-left: 40px;
-  width: 120px;
-  height: 32px;
+#logbtn {
+  margin-top: -5px;
+  margin-left: 11px;
+  width: 250px;
+  height: 33px;
   background: #0f0f0f;
   border: none;
   border-radius: 2px;
-  color: #FFF;
-  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   transition: 0.1s ease;
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+#logbtn:hover,
+#logbtn:focus {
   opacity: 0.8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
 }
 
-input[type="submit"]:active {
+#logbtn:active {
   opacity: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
 }
 
-.or {
-  position: absolute;
-  top: 180px;
-  left: 280px;
-  width: 40px;
-  height: 40px;
-  background: #DDD;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
-  text-align: center;
-}
-
-.left {
+#left {
   position: absolute;
   top: 0;
   right: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 300px;
-  height: 480px;
-  background: url('../images/login.png');
+  width: 350px;
+  height: 500px;
+  background: url("../images/Login.png");
   background-size: cover;
   background-position: center;
   border-radius: 0 2px 2px 0;
 }
 
-.left .loginwith {
-  display: block;
-  margin-bottom: 40px;
-  font-size: 28px;
-  color: #FFF;
-  text-align: center;
-}
-
-.social_sites{
-  margin:8px;
-}
-.social_sites2{
-  margin:8px;
-}
-
-hr{
-  padding:0px;
-}
-
-button.social-signin {
-  margin-bottom: 20px;
-  width: 220px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-button.social-signin:hover,
-button.social-signin:focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin.facebook {
-  background: #32508E;
-}
-
-button.social-signin.twitter {
-  background: #55ACEE;
-}
-
-button.social-signin.google {
-  background: hsl(27, 100%, 51%);
-}
-
-.box-2 {
+#box-2 {
   margin-left: 5px;
   display: flex;
   flex-direction: row;
 }
 
-.fp {
-font-size: smaller;
-    font-weight: bold;
-    margin-left: 116px;
-    margin-top: -19px;
-    text-decoration: none;
-
-}
-a {
-  color: hsl(27, 100%, 51%);
-  text-decoration: none;
+#fp {
+  font-size: small;
+  font-weight: 700;
+  margin-left: 160px;
+  margin-top: -35px;
+  display: flex;
+  color: black;
 }
 
+@media screen and (max-width: 800px) {
+  #right {
+    width: 100% !important;
+  }
+  #left {
+    display: none !important;
+    width: 0% !important;
+  }
+  #login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 350px;
+    height: 500px;
+    background: #ededed;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}
