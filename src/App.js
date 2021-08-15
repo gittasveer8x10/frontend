@@ -1,13 +1,16 @@
-//Complementary-Functions
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/LoginScreen.css'
 
-//Screen-Imports
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HomeScreen } from "./screens/HomeScreen";
+import { LoginScreen } from './screens/LoginScreen';
+
 function App() {
   return (
     <>
       <Router>
-        <Route component={HomeScreen} exactpath="/" />
+      <Route path="/login" component={LoginScreen} />
+      <Route component={HomeScreen} path="/" exact/>
       </Router>
     </>
   );

@@ -48,7 +48,7 @@ export const Header = () => {
             </Nav.Link>
 
             {width >= 1000 ? (
-              <Nav.Link href="#action2" className="m-3">
+              <Nav.Link href="/login" className="m-3">
                 <Button
                   variant="primary "
                   className="mx-2"
