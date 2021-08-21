@@ -1,12 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import RegisterScreen from "./screens/RegisterScreen";
 
+//Complementary-Functions
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+//Screen-Imports
+
+import { HomeScreen } from "./screens/HomeScreen";
+import RegisterScreen from "./screens/RegisterScreen";
 function App() {
   return (
-    <Router>
-      <Route path="/register" component={RegisterScreen} exact />
-    </Router>
+    <>
+      <Router>
+        <Route component={HomeScreen} path="/" exact />
+        <Route path="/register" component={RegisterScreen} />
+      </Router>
+    </>
   );
 }
 

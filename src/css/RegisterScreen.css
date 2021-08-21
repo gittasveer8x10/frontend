@@ -6,8 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 300;
   height: 100%;
   background: url("../images/registerBg.png");
@@ -49,33 +48,32 @@ body {
   border-radius: 0 2px 2px 0;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="email"] {
   display: block;
   box-sizing: border-box;
-  margin-bottom: 18px;
-  padding: 4px;
-  width: 251px;
   height: 32px;
+  width: 251px;
+  margin-bottom: 18px;
+  margin-left: 17px;
+  padding: 4px;
   border: none;
   border-bottom: 1px solid #888888;
+  border-radius: 0px;
   background: #ededed;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   transition: 0.2s ease;
-  margin-left: 17px;
-  border-radius: 0px;
 }
 
-.fas {
-  width: 20px;
-  margin-top: 14px;
-  margin-right: -16px;
+.register-form .fas {
+  width: 20px !important;
+  margin-top: 14px !important;
+  margin-right: -16px !important;
 }
 
-#uniqueId {
+#personalId {
   text-decoration: none;
   color: black;
   margin-left: 13rem;

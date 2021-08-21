@@ -9,6 +9,7 @@ import {
   Button,
   CloseButton,
 } from "react-bootstrap";
+
 function RegisterScreen() {
   return (
     <Container id="login-box">
@@ -16,8 +17,8 @@ function RegisterScreen() {
       <Col id="left">
         <h2 className="font-weight-bold">Register</h2>
         <hr style={{ marginBottom: "6px" }} />
-        <Link id="uniqueId">#ASDFIG</Link>
-        <Form>
+        <Link id="personalId">#ASDFIG</Link>
+        <Form className="register-form">
           <Row>
             <i className="fas fa-user"></i>
             <Form.Group controlId="name" style={{ width: "20px" }}>
@@ -58,7 +59,10 @@ function RegisterScreen() {
             </Form.Group>
           </Row>
           <Row md={2} className="justify-content-center">
-            <Button type="submit" variant="dark">
+            <Button
+              type="submit"
+              style={{ background: "black", color: "white" }}
+            >
               Register
             </Button>
           </Row>
